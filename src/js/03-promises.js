@@ -16,10 +16,10 @@ function submitCreatePromises(e) {
   for (let i = 1; i <= amountValue; i++) {
     createPromise(i, delay)
       .then(({ position, delay }) => {
-        window.alert(`✅ Resolved promise ${position} in ${delay}ms`);
+        console.log(`✅ Resolved promise ${position} in ${delay}ms`);
       })
       .catch(({ position, delay }) => {
-        window.alert(`❌ Rejected promise ${i} in ${delay}ms`);
+        console.log(`❌ Rejected promise ${i} in ${delay}ms`);
       });
     delay += stepValue;
   }

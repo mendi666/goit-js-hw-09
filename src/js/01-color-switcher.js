@@ -10,7 +10,7 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-const colorChangeDelay = 50;
+const colorChangeDelay = 1000;
 
 let intervalID;
 
